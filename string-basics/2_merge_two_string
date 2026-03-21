@@ -1,0 +1,19 @@
+# Merge two strings by alternating characters
+# e.g. str1="abc" str2="1234" result="a1b2c34"
+
+def merge_two_strings(str1, str2):
+    merged_string = []
+    
+    for i in range(max(len(str1), len(str2))):
+        merged_string.append(str1[i:i+1])
+        merged_string.append(str2[i:i+1])
+    # s1 = str1[::2]
+    # print(s1)
+    # s2 = str2[::2]
+    # print(s2)
+    
+    return "".join(merged_string)
+
+result = merge_two_strings("abc","1234")
+
+print(f"Merge two strings by alternating characters {result}")
