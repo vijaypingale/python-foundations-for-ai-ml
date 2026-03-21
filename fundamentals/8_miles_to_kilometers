@@ -1,0 +1,9 @@
+# convert miles to kilomerts
+# 1 mile = 1.609 kilomerter
+
+miles_to_Kim_formula = float(1.609)
+
+miles = float(input("Enter miles to convert into kilomerter: "))
+
+print(miles * miles_to_Kim_formula)
+
